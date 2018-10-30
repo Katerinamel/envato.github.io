@@ -1,0 +1,68 @@
+.section-schedule{
+    height: 610px;
+    width: 100%;
+}
+.section-schedule-wrapper{
+width:75%;
+margin: 0 auto;
+}
+
+.border{
+    border-radius: 20px;
+    display: block;
+    overflow: hidden;
+}
+.center{
+    text-align: center;
+    text-indent: 0pt;
+}
+.section-schedule-table{
+width: 100%;
+
+
+&__head{
+    background-color: $green;
+    height: 75px;
+    font-family: $roboto;
+    font-weight: 900;
+    color: white;
+    font-size: 30px;
+    text-indent: 30pt;
+
+}
+
+
+&__cell{
+    height: 75px;
+    font-family: $roboto;
+    color: white;
+    text-indent: 30pt;
+    font-size: 22px;
+
+&_dark-grey{
+    background-color: $dark-grey;
+    }
+
+&_light-grey{
+    background-color: #4b4d4f;
+    }
+}
+}
+td{
+    vertical-align: middle;    
+}
+
+
+.section-schedule__text{
+    font-family: $roboto;
+    font-weight: 100;
+  font-size: 14px;
+  color: $dark-grey;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 160px;
+
+}
+.plus{
+    width: 100%
+}

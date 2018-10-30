@@ -1,0 +1,143 @@
+
+.section-speakers-wrapper{
+    width:75%;
+    margin: 0 auto;
+}
+.section-speakers{
+    height: 1380px;
+    width: 100%;
+
+
+
+&__main-text{
+    font-family: $roboto;
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    
+}
+&__sub-text{
+    width: 55%;
+    font-family: $roboto;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 65px;
+}
+
+&__block{
+background-color: $green;
+height: 295px;
+width: 295px;
+border-radius: 10px;
+margin: 0 auto;
+}
+}
+ .grid{
+     display: grid;
+     grid-template-columns: 30% 30% 30%;
+     grid-template-rows: 295px 295px 295px;
+     grid-column-gap: 40px;
+     grid-row-gap: 40px;
+ } 
+ .img-center{
+     margin-top: 40px;
+     text-align: center;
+ }
+
+ .layout-img{
+    position: relative;
+ }
+
+ /* весь контейнер поддерживает перспективу */
+.flip-container {
+    perspective: 1000;
+   }
+    /* переверните сторону при проведении мышью */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+     transform: rotateY(180deg);
+    }
+   
+   .flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+   }
+   
+   /* здесь находится скорость перевертывания */
+   .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+   
+    position: relative;
+   }
+   
+   /* скройте обратную сторону во время переворота */
+   .front, .back {
+    backface-visibility: hidden;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+   }
+   
+   /* лицевая сторона размещена над обратной */
+   .front {
+    z-index: 2;
+   }
+   
+   /* обратная, изначально скрытая сторона */
+   .back {
+    transform: rotateY(180deg);
+   
+
+&__main-text{
+color: white;
+font-family: $roboto;
+font-weight: 900;
+font-size: 45px;
+position: absolute;
+top: 40px;
+left: 33px;
+
+  
+   }
+&__main-text::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -30%;
+    width: 100px;
+    height: 8px;
+    background: white
+}
+&__sub-text{
+font-family: $roboto;
+color: white; 
+font-size: 18px;
+position: absolute;
+left: 33px;
+top: 165px;  
+width: 70%; 
+line-height: 1.2;
+
+  
+   }
+
+
+
+   }
+
+
+.back__social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    position: absolute;
+    top: 240px;
+}
+
+.none{
+display: none;
+}

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Envato</title>
+    <link href="node_modules/reset-css/reset.css" rel="stylesheet">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel='stylesheet' href='dist/style.css'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="section-header">
+            <div class="section-header__logo">
+                <img src='src/img/logo.png' />
+            </div>
+            <nav class="section-header__navigation" id="menu">
+                <a href="#section-schedule" class="section-header__nav-item">Event Details</a>
+                <a href="#section-speakers" class="section-header__nav-item">Speakers</a>
+                <a href="#section-sponsors" class="section-header__nav-item">Sponsors</a>
+                <a href="#section-events" class="section-header__nav-item">Past Events</a>
+                <a href="#section-contact" class="section-header__nav-item">Contact</a>
+            </nav>
+        </section>
+
+        <section class="section-date">
+            <div class="date-container">
+                <div id="timer"></div>
+                <div class="date-container__text">
+                    <span>Days</span>
+                    <span>Hours</span>
+                    <span>Minutes</span>
+                    <span>Seconds</span>
+                </div>
+
+        </section>
+
+        <section class="section-form">
+            <div class="grey-area">
+                <div class="section-form__image">
+                    <img class="section-form__img_img"src='src/img/heroes.png' />
+                </div>
+
+
+                <svg class="bottom" viewBox="0 0 200 200">
+
+
+                    <filter id="dropshadow" height="130%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="0" />
+                        <feMerge>
+                            <feMergeNode/>
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <polygon points="0,20 0,40 200,40  200,0" fill="white" filter="url(#dropshadow)"></polygon>
+                </svg>
+            </div>
+            <div class="section-form_white">
+                <div class="section-form__text">
+                    <div class=section-form__text_main>Welcome!</div>
+                    <div class="section-form__text_sub">
+                        <div class="margin-top">The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of
+                            it too..
+                        </div>
+                        <div class="margin-top">Get together with members of the Envato community to talk shop, trade war stories, make new friends
+                            and seethe faces behind the avatars.Whether you're an author on EnvatoMarket, a client on Envato
+                            Studio, or a learner on Tuts+, you are inveted!</div>
+                        <div class="margin-top">It doesn't matter as long as you have the motivation and interest to work at the envato and bring
+                            cookies to iur event. Just kidding, but we don't mind having more cookies! :) Head over and fill
+                            up the sign up form here so that we can keep track of our guests. Don't forget to register on
+                            our invite page here too!</div>
+                    </div>
+                </div>
+                <div class="section-form__form">
+                    <form action="./post.php" method="post" class="form">
+                        <div class="section-form__form-name">Sign up for our event</div>
+                        <input id="user" class="section-form__input" name="user" type="text" placeholder="Enter your name" required>
+                        <input id="email" class="section-form__input" name="email" type="email" placeholder="Enter your email" required>
+                        <input id="tel" class="section-form__input" name="tel" type="tel" placeholder="Phone number" required>
+                        <input id="user" class="section-form__input" name="name" type="text" placeholder="Envato Username" required>
+                        <input class="section-form__button" type="submit" value="Let me in!">
+                        <div class="section-form__form-text">
+                            Hurry up, Limited seats availble</div>
+                        <div class="section-form__form-text">*we will never spam your email</div>
+                </div>
+                </form>
+            </div>
+        </section>
+        <section class="section-icons">
+            <div class="section-icons-wrapper">
+                <div class="icons-block">
+                    <img class="icons-block__img" src='src/img/community.png' />
+                    <div class="icons-block__main-text">
+                        Community
+                    </div>
+                    <div class="icons-block__sub-text">
+                        Meet the Community you’ve always talked with, in real life! This meetup will be about authors angaging each other with interestiong
+                        converation and topics. We will have loads of fun.
+                    </div>
+                </div>
+
+                <div class="icons-block">
+                    <img class="icons-block__img" src='src/img/talk.png' />
+                    <div class="icons-block__main-text">
+                        Talk Shop
+                    </div>
+                    <div class="icons-block__sub-text">
+                        In this meetup you will get to know the marketplaces better, bceause that's why were all here for right? Learn a few tips
+                        and tricks from experienced authors from all over the country.
+                    </div>
+                </div>
+                <div class="icons-block">
+                    <img class="icons-block__img" src='src/img/war.png' />
+                    <div class="icons-block__main-text">
+                        War Stories
+                    </div>
+                    <div class="icons-block__sub-text">
+                        Gather round fellow authors! Hear the stories of success from your favourite authors and learn how they we able to trackle
+                        their problems and become successful.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-schedule" id="section-schedule">
+            <div class="section-schedule-wrapper">
+                <div class="border">
+                    <table class="section-schedule-table">
+                        <thead>
+                            <tr class="section-schedule-table__head">
+                                <td class="center">Time</td>
+                                <td>Stuff that will happen</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="section-schedule-table__cell section-schedule-table__cell_dark-grey">
+                                <td>10am - 12pm</td>
+                                <td>Introduction and presentations about Envato</td>
+                                <td>
+                                    <img src='src/img/plus.png' />
+                                </td>
+                            </tr>
+                            <tr class="section-schedule-table__cell section-schedule-table__cell_light-grey">
+                                <td>12pm - 02 pm</td>
+                                <td>Sessions by honorable guests and Speakers</td>
+                                <td>
+                                    <img src='src/img/plus.png' />
+                                </td>
+                            </tr>
+                            <tr class="section-schedule-table__cell section-schedule-table__cell_dark-grey">
+                                <td>02pm - 03pm</td>
+                                <td>Break and Mingle time with the authors</td>
+                                <td>
+                                    <img src='src/img/plus.png' />
+                                </td>
+                            </tr>
+                            <tr class="section-schedule-table__cell section-schedule-table__cell_light-grey">
+                                <td>03pm - 05pm</td>
+                                <td>Portfolio Review, Rewards and Ending Presentation</td>
+                                <td>
+                                    <img src='src/img/plus.png' />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section-schedule__text">
+                    Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we
+                    do plan to finish it within our set time but it doesn't have to be, if we all agree to hangour for scheme
+                    time more, what harm could it do? :)
+                </div>
+            </div>
+
+        </section>
+        <section class="section-elite">
+            <div class="section-elite__white-area">
+                <svg class="top" viewBox="0 0 200 200">
+
+
+                    <filter id="dropshadow" height="130%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="0" />
+                        <feMerge>
+                            <feMergeNode/>
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <polygon points="0,0 0,13 200,0" fill="white" filter="url(#dropshadow)" />
+                </svg>
+            </div>
+            <div class="section-elite__grey-area">
+                <div class="section-elite-wrapper">
+                    <div class="section-elite__img">
+                        <img class="section-elite__img_img" src='src/img/envato.png' />
+                    </div>
+                    <div class="section-elite__text">
+                        <div class="section-elite__main-text">
+                            We reward the Elites!
+                        </div>
+                        <div class="section-elite__sub-text">
+                            <span class="margin">
+                                Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great
+                                success in the marketplace and we wnt to make known to the peop;e of our contry that ypu
+                                are amazing! Our Elite gifting program includes giving you special merchandize from our community.
+                            </span>
+                            <span class="margin">
+                                All you have to do is contact us by clicking the button here and then its just going to thr event, saying something motivational
+                                and taking the swag while looking amazing infront of thoutsands of other community members.
+                            </span>
+                            <span class="margin">
+                                *Be advised, we will only give you Elite thank you swag for each level of elite you cross. That means if you do not cross
+                                to the next elite level before the next event, you cannot caim your priszes.
+                            </span>
+                        </div>
+
+
+                        <a href="#openmodal" class="section-elite__button">Bring on the swag!</a>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="section-elite__white-area_bottom">
+                <svg viewBox="0 0 200 200">
+
+
+                    <filter id="dropshadow" height="130%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="0" />
+                        <feMerge>
+                            <feMergeNode/>
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <polygon points="0,13 0,30 200,30 200,00" fill="white" filter="url(#dropshadow)"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="section-speakers" id="section-speakers">
+            <div class="section-speakers-wrapper">
+                <div class="section-speakers__main-text">
+                    Speakers
+                </div>
+                <div class="section-speakers__sub-text">
+                    Meet our Valuable speakers who will be each giving 10 minutes sessions on different subjects regarding being a digital product
+                    author, working at envato and marketing your business. Hope you will have a great time listening to our
+                    presentations!
+                </div>
+
+                <div class="grid">
+
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="section-speakers__block">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <img class="layout-img" src='src/img/green-layout.png' />
+                                <div class="back__main-text">Shahriyer Shuvo</div>
+                                <div class="back__sub-text">More about selling in the Envato Marketplaces</div>
+                                <div class="back__social">
+                                    <a href="https://web.facebook.com" class="back__social_fb">
+                                        <img class="layout-img" src='src/img/social/facebook.png' />
+                                    </a>
+                                    <a href="https://twitter.com" class="back__social_tw">
+                                        <img class="layout-img" src='src/img/social/twitter.png' />
+                                    </a>
+                                    <a href="https://behance.net" class="back__social_bh">
+                                        <img class="layout-img" src='src/img/social/behance.png' />
+                                    </a>
+                                    <a href="https://dribbble.com" class="back__social_dr">
+                                        <img class="layout-img" src='src/img/social/dribbble.png' />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-container hide" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="section-speakers__block">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <img class="layout-img" src='src/img/green-layout.png' />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-container hide" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="section-speakers__block">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <img class="layout-img" src='src/img/green-layout.png' />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-container hide" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="section-speakers__block">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <img class="layout-img" src='src/img/green-layout.png' />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-center hide">
+                        <img src='src/img/fingers.png' />
+                    </div>
+                    <div class="flip-container hide" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="section-speakers__block">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <img class="layout-img" src='src/img/green-layout.png' />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-container hide hide_" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="section-speakers__block">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <img class="layout-img" src='src/img/green-layout.png' />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-container hide hide_" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="section-speakers__block">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <img class="layout-img" src='src/img/green-layout.png' />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-container hide hide_" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="section-speakers__block">
+                                </div>
+                            </div>
+                            <div class="back">
+                                <img class="layout-img" src='src/img/green-layout.png' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-sponsors" id="section-sponsors">
+            <div class="section-sponsors__white-area">
+                <svg class="top" viewBox="0 0 200 200">
+
+
+                    <filter id="dropshadow" height="130%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="0" />
+                        <feMerge>
+                            <feMergeNode/>
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <polygon points="0,0 0,13 200,0" fill="white" filter="url(#dropshadow)" />
+                </svg>
+            </div>
+            <div class="section-sponsors__grey-area">
+
+                <div class="section-sponsors__main-text">
+                    Sponsor Our Event!
+                </div>
+                <div class="section-sponsors__sub-text">If you want to help us making this event lively and successful ,help us by sponsoring our ebent! This will
+                    help us bring in more peop;e, have better livestreaming equipment, maybe even our own chef! You can also
+                    sponsor us by giving away free swag at the event! </div>
+                <div class="section-sponsors__sub-text">Here's who have sponsored us already: </div>
+
+                <div class="section-sponsors__logos">
+                    <img src='src/img/House.png' />
+                    <img src='src/img/S.png' />
+                    <div class="img_conteiner">
+                        <img src='src/img/envato_logo.png' />
+                    </div>
+                </div>
+                <button class="section-sponsors__button">
+                    Sponsor Us!
+                </button>
+            </div>
+            <div class="section-sponsors__white-area_bottom">
+                <svg viewBox="0 0 200 200">
+
+
+                    <filter id="dropshadow" height="130%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="0" />
+                        <feMerge>
+                            <feMergeNode/>
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+
+                    <polygon points="0,13 0,30 200,30 200,00" fill="white" filter="url(#dropshadow)"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="section-events" id="section-events">
+            <div class="section-events__main-text">
+                Past Events
+            </div>
+            <div class="section-events__sub-text">
+                Check out the photos of our previous events where we rocked wiht a lot of Famous and enthusiastic authors! We're always planningto
+                make our future events feel fresh and fun to be at. :)
+            </div>
+            <div class="section-events__wrapper grid-events">
+                <div class="event-blue">
+                    <div id="event-blue__img">
+
+                    </div>
+                </div>
+                <div class="event-green">
+                    <div id="event-green__img">
+
+                    </div>
+                </div>
+                <div class="event-yellow">
+                    <div id="event-yellow__img"></div>
+                </div>
+                <div class="event-orange">
+                    <div id="event-orange__img"></div>
+                </div>
+            </div>
+            <button class="section-sponsors__button black ">
+                Sponsor Us!
+            </button>
+        </section>
+        <section class="section-map" id="section-contact">
+            <div id="hide" class="section-map-wrapper">
+                <img class="section-map-wrapper__img" src='src/img/map.png'>
+                <div class="grey"></div>
+                <div class="section-map-whole">
+                    <div class="section-map-text">
+                        <div class="section-map-text__img">
+                            <img src='src/img/icon-map.png'>
+
+
+                            <div class="section-map-text__maintext">
+                                Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia
+                            </div>
+                            <button id="view-map" class="section-map-text__button">
+                                View Map
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="section-map-form">
+
+                        <form action="./post.php" method="post" class="form">
+
+                            <input id="email" class="section-form__input margin-top" name="email" type="email" placeholder="Enter your email" required>
+                            <textarea id="message" class="section-form__input textarea" name="message" type="text" placeholder="Type your message"></textarea>
+                            <input class="section-form__button black" type="submit" value="Send Message">
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="show-map" class="section-map__map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.8727530097844!2d-77.48510034861708!3d39.08659607944159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b63c6fb7ca57a5%3A0xba9d4cc36b77c3d4!2sLansdowne+on+the+Potomac+HOA!5e0!3m2!1sru!2sby!4v1540806564864"
+                    width="100%" height="660" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </section>
+        <footer class="section-footer">
+            <div class="section-footer-social-networks">
+                <a href="https://web.facebook.com" class="a-block">
+                    <img class="layout-img" src='src/img/social/facebook.png' />
+                </a>
+                <a href="https://twitter.com" class="a-block">
+                    <img class="layout-img" src='src/img/social/twitter.png' />
+                </a>
+                <a href="https://linkedin.com" class="a-block">
+                    <img class="layout-img" src='src/img/social/linkedin.png' />
+                </a>
+                <a href="https://behance.net" class="a-block">
+                    <img class="layout-img" src='src/img/social/behance.png' />
+                </a>
+                <a href="https://dribbble.com" class="a-block">
+                    <img class="layout-img" src='src/img/social/dribbble.png' />
+                </a>
+            </div>
+            <div class="section-footer-text">
+                Hope we see you at the event!
+                <div>All Rights Reserved. Envato Bangladesh &copy; 2015</div>
+            </div>
+        </footer>
+        <div id="openmodal" class="modalDialog">
+
+            <div class="modal-style">
+                <a href="#close" title="Закрыть" class="close">X</a>
+                <div class="modalDialog__text">
+                    Your application was saved!
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <div id="scroller"> ^ To top</div>
+        <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+
+</html>

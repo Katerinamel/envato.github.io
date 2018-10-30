@@ -1,0 +1,38 @@
+.section-header{
+    background-color: $grey;
+    height: 160px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+&__logo{
+    display: flex;
+    width: 230px;
+    height: 60px;
+    //background: url(../dist/logo.png);
+}
+
+&__navigation{
+    display: flex;
+    width: 45%;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+&__nav-item{
+    color: white;
+    font-family: $roboto;
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    
+
+    
+}
+
+}
+ 

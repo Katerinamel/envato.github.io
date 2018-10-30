@@ -1,0 +1,32 @@
+.section-footer{
+height: 220px;
+background-color: $green;
+width: 100%;
+}
+
+.section-footer-social-networks{
+width: 22%;
+height: 120px;
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 0 auto;
+
+}
+.section-footer-text{
+    width: 29%;
+    margin: 0 auto;
+    color: white; 
+    font-size: 18px; 
+    font-family: $roboto;
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.4;
+
+      
+}
+.a-block{
+    display: inline-block;
+}

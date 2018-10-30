@@ -1,0 +1,73 @@
+.section-sponsors{
+    height: 705px;
+    width: 100%;
+    background:$blue-grey;
+    position: relative;
+
+&__white-area{
+    height: 180px;
+  
+}
+
+&__white-area_bottom{
+position: relative;
+height: 125px;
+}
+&__grey-area{
+    height: 350px;
+
+}
+
+
+&__main-text{
+    font-family: $roboto;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+&__sub-text{
+    font-family: $roboto;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+   width: 46%;
+   margin: 0 auto;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+  
+
+&__logos{
+   text-align: center;
+      width: 46%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0 auto;
+      margin-top: 55px;
+     
+  }
+
+
+&__button{
+  width: 15%;
+  height: 55px;
+  background-color: $green;
+  border-radius: 10px;
+  font-family: $roboto;
+  color: white;  
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 50px;
+border: 0;
+display: block
+
+  }
+  .img_conteiner{
+display: flex;
+flex-direction: column;
+justify-content: center;
+  }
+}

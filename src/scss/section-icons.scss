@@ -1,0 +1,35 @@
+.section-icons{
+    height: 610px;  
+    width: 100%;
+}
+.section-icons-wrapper{
+    
+    width:75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.icons-block{
+    width: 24%;
+  margin-top: 155px;
+  text-align: center;
+
+&__main-text{
+font-family: $roboto;
+font-weight: 900;
+font-size: 35px;
+margin-top:44px;
+margin-bottom:30px;
+}
+&__sub-text{
+font-family:$roboto;
+font-weight: 100; 
+font-size: 14px;
+
+}
+&__img{
+    width: 50%;
+}
+}

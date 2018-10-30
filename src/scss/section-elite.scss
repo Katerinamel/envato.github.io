@@ -1,0 +1,142 @@
+
+.section-elite-wrapper{
+    width:75%;
+    margin: 0 auto;
+}
+.section-elite{
+    background: $blue-grey;
+    height: 705px;
+    width: 100%;
+    position: relative;
+
+&__white-area{
+    height: 180px;
+  
+}
+
+&__white-area_bottom{
+position: relative;
+height: 125px;
+}
+&__grey-area{
+    height: 350px;
+
+}
+
+&__img{
+    display: inline-block;
+    position: absolute;
+    top: -125px;
+}
+&__img_img{
+    width: 100%;
+}
+&__text{
+width: 54%;
+display: inline-block;
+text-align: right;
+position: absolute;
+right:12%;
+
+}
+&__button{
+    width: 30%;
+    height: 55px;
+    background-color: $green;
+    border-radius: 10px;
+    font-family: $roboto;
+    color: white;  
+    font-size: 18px;
+    border: 0px;
+
+    padding: 20px 30px 20px 30px;
+    text-decoration: none;
+}
+&__main-text{
+    font-family: $roboto;
+    font-weight: 900;
+    color: white;
+font-size: 50px;
+margin-bottom: 40px;
+    
+}
+
+&__sub-text{
+    color: white;
+    font-family: $roboto;
+    font-weight: 100; 
+    font-size: 14px;
+    margin-bottom: 55px;
+
+}
+}
+.margin{
+    margin-bottom: 25px;
+    display: block;
+}
+.top{
+    top: 0px;
+}
+.bottom{
+    bottom: -50px;
+}  
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -20px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none; }
+    .modalDialog:target {
+      display: block;
+      pointer-events: auto; }
+
+      .modalDialog__text{
+font-family: $roboto;
+font-size: 30px;
+text-align: center;
+      }
+  
+.modal-style {
+    width: 40%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff; 
+}
+  
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000; 
+}
+.close:hover {
+    background: $green; 
+}
+  

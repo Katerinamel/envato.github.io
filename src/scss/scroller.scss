@@ -1,0 +1,21 @@
+   #scroller{
+    position: fixed;    
+    /** позиция кнопки scroll to top **/
+    bottom: 30px;   
+    /** картинка кнопки наверх**/
+border: 1px solid $green;
+
+    width: 90px;
+    height: 32px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: $roboto;
+    text-align:center;
+    background: $green;
+    
+    cursor: pointer;
+    /** скрываем кнопку в начале **/
+    display:none;
+}
